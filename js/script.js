@@ -13,6 +13,15 @@ document.querySelector('#close-account').onclick = () => {
     account.classList.remove('active');
 };
 
+let myOrders = document.querySelector('.my-orders')
+
+document.querySelector('#order-btn').onclick = () => {
+    myOrders.classList.add('active');
+};
+document.querySelector('#close-orders').onclick = () => {
+    myOrders.classList.remove('active');
+};
+
 
 window.onscroll = () => {
     navbar.classList.remove('active');

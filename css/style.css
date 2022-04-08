@@ -119,7 +119,7 @@ section {
     position: fixed;
     top: 0;
     right: -110%;
-    width: 100% ;
+    width: 100%;
     z-index: 1100;
     background-color: var(--white);
     height: 100vh;
@@ -127,7 +127,6 @@ section {
 }
 .user-account.active {
     right: 0;
-
 }
 
 .user-account #close-account {
@@ -215,7 +214,76 @@ section {
     font-size: 1.8rem;
     color: var(--black);
 }
-/* Media queries */
+
+.my-orders {
+    position: fixed;
+    top: 0;
+    right: -110%;
+    width: 35rem;
+    z-index: 1100;
+    background-color: var(--light-bg);
+    border-left: var(--border);
+    height: 100vh;
+    overflow-y: scroll;
+}
+.my-orders.active {
+    right: 0;
+}
+.my-orders #close-orders {
+    text-align: right;
+    margin-bottom: 2.5rem;
+}
+.my-orders #close-orders span {
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: var(--red);
+    text-decoration: underline;
+}
+.my-orders #close-orders span:hover {
+    color: var(--black);
+}
+.my-orders .title {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--black);
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.my-orders .box {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    box-shadow: var(--box-shadow);
+    margin: 1.5rem 0;
+
+
+}
+.my-orders .box p {
+    font-size: 1.7rem;
+    margin: 1.7rem 0;
+    color: var(--light-color);
+    line-height: 1.5;
+}
+
+.my-orders .box p span {
+    color: var(--black);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  <-- Media queries -->  */
 
 @media (max-width: 991px) {
     html {
@@ -247,5 +315,9 @@ section {
 @media (max-width: 450px) {
     html {
         font-size: 50%;
+    }
+    .my-orders {
+        width: 100%;
+        border-left: none;
     }
 }
