@@ -31,12 +31,98 @@
                     <div id="menu-btn" class="fas fa-bars"></div>
                     <div id="user-btn" class="fas fa-user"></div>
                     <div id="order-btn" class="fas fa-box"></div>
-                    <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+                    <div id="cart-btn" class="fas fa-shopping-cart">
+                        <span>(4)</span>
+                    </div>
                 </div>
             </section>
         </header>
         <!-- header section ends -->
+        <div class="user-account">
+           <section>
+            <div id="close-account"><span>close</span></div>
+            <div class="user">
+                <p><span>you are not logged in now!</span></p>
+            </div>
 
+            <div class="display-orders">
+                <p>pizza-1 <span>( $3/- x 2)</span></p>
+                <p>pizza 03 <span>( $2/- x 1)</span></p>
+                <p>pizza 06 <span>( $4/- x 4)</span></p>
+                <p>pizza 07 <span>( $2/- x 1)</span></p>
+            </div>
+
+            <div class="flex">
+                <form action="" method="post">
+                    <h3>login now</h3>
+                    <input
+                        type="email"
+                        name="email"
+                        required
+                        class="box"
+                        placeholder="enter your email"
+                        maxlength="50"
+                    />
+                    <input
+                        type="password"
+                        name="pass"
+                        required
+                        class="box"
+                        placeholder="enter your password"
+                        maxlength="20"
+                    />
+                    <input
+                        type="submit"
+                        value="login now"
+                        name="login"
+                        class="btn"
+                    />
+                </form>
+
+                <form action="" method="post">
+                    <h3>registrer now</h3>
+                    <input
+                        type="text"
+                        name="name"
+                        required
+                        class="box"
+                        placeholder="enter your name"
+                        maxlength="20"
+                    />
+                    <input
+                        type="email"
+                        name="email"
+                        required
+                        class="box"
+                        placeholder="enter your email"
+                        maxlength="50"
+                    />
+                    <input
+                        type="password"
+                        name="pass"
+                        required
+                        class="box"
+                        placeholder="enter your password"
+                        maxlength="20"
+                    />
+                    <input
+                        type="password"
+                        name="cpass"
+                        required
+                        class="box"
+                        placeholder="confirm your password"
+                        maxlength="50"
+                    />
+                    <input
+                        type="submit"
+                        value="registrer now"
+                        name="registrer"
+                        class="btn"
+                    />
+                </form>
+            </div>
+           </section>
+        </div>
         <!-- JS -->
         <script src="./js/script.js"></script>
     </body>
